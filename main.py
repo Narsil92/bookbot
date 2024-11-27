@@ -1,10 +1,15 @@
-# open file frankenstein.txt
+# read content of the file located in frankenstein.txt
 
+def read_book():
+    with open("books/frankenstein.txt") as f:
+     return f.read()
+    
+# keep file content in variable
 def main():
- with open("books/frankenstein.txt") as f:
-     file_contents = f.read()
-     print(file_contents)
+ book_contents = read_book()   
+ print(book_contents)
 
-main()
-
+# call only in this file
+if __name__ == "__main__":
+ main()
 
