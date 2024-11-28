@@ -29,12 +29,14 @@ def count_characters(book_contents):
 #Function that will operate as my print into console
 def print_report(word_count, sorted_char_count, book_path):
     print(f"--- Begin report of {book_path} ---")
+    print("\n")
     print(f"{word_count} words found in the document")
     print("\n")      
     print("Characters (and how many times they occuring) in that document are:")
+    print("\n") 
     for char, count in sorted_char_count.items():
         print(f"The '{char}' character was found {count} times")
-    
+    print("--- End Report ---")
     
 
 
